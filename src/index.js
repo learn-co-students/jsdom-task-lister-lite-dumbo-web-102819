@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let newTaskForm = document.querySelector("#create-task-form")
   let thingsToDo = document.querySelector("#tasks")
 
-  
+
 
 
   newTaskForm.addEventListener("submit", function (evt) {
@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let button = document.createElement("button")
     button.innerText = "Delete"
     button.className = "delete"
-    let editButton = document.createElement("button")
-    editButton.innerText = "edit"
-    editButton.className = "edit"
+    // let editButton = document.createElement("button")
+    // editButton.innerText = "edit"
+    // editButton.className = "edit"
     newLi.append(button)
-    newLi.append(editButton)
+    // newLi.append(editButton)
     thingsToDo.append(newLi)
     evt.target.reset()
 
